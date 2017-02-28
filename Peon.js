@@ -5,7 +5,7 @@ esferaForma.translate(0,2,0);
 var anilloMalla = new THREE.Mesh(anilloForma);
 var esferaMalla = new THREE.Mesh(esferaForma);
 
-var arbolForma = new THREE.Geometry();
+var peonForma = new THREE.Geometry();
 peonForma.merge(anilloMalla.geometry, anilloMalla.matrix);
 peonForma.merge(esferaMalla.geometry, esferaMalla.matrix);
 
