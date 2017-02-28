@@ -1,6 +1,6 @@
 var anilloForma = new THREE.RingGeometry( 1, 5, 32 );
 var esferaForma = new THREE.SphereGeometry(.65);
-esferaForma.translate(0,2,0);
+esferaForma.translate(0,20,0);
 
 var anilloMalla = new THREE.Mesh(anilloForma);
 var esferaMalla = new THREE.Mesh(esferaForma);
