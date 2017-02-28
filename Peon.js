@@ -1,19 +1,19 @@
-var troncoForma = new THREE.CylinderGeometry(.25, 1,2);
+var anilloForma = new THREE.RingGeometry( 1, 5, 32 );
 var esferaForma = new THREE.SphereGeometry(.65);
 esferaForma.translate(0,2,0);
 
-var troncoMalla = new THREE.Mesh(troncoForma);
+var anilloMalla = new THREE.Mesh(anilloForma);
 var esferaMalla = new THREE.Mesh(esferaForma);
 
 var arbolForma = new THREE.Geometry();
-arbolForma.merge(troncoMalla.geometry, troncoMalla.matrix);
-arbolForma.merge(esferaMalla.geometry, esferaMalla.matrix);
+peonForma.merge(anilloMalla.geometry, anilloMalla.matrix);
+peonForma.merge(esferaMalla.geometry, esferaMalla.matrix);
 
-var material = new THREE.MeshNormalMaterial();
-var arbolMalla = new THREE.Mesh(arbolForma, material);
+var material = new THREE.MeshBasicMaterial( { color: 0xffff00, side: THREE.DoubleSide } );
+var peonMalla = new THREE.Mesh(peonForma, material);
 
 var escena = new THREE.Scene();
-escena.add(arbolMalla);
+escena.add(peonMalla);
 
 var camara = new THREE.PerspectiveCamera();
 camara.position.z = 5;
