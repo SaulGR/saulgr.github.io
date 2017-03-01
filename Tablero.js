@@ -1,5 +1,5 @@
 
-var material1 = new THREE.MeshBasicMaterial( { color: 0xbbbbbb } );
+/*var material1 = new THREE.MeshBasicMaterial( { color: 0xbbbbbb } );
 var material2 = new THREE.MeshBasicMaterial( { color: 0x373737 } );
 var material3 = new THREE.MeshBasicMaterial( { color: 0x642424 } );
 
@@ -67,6 +67,7 @@ arbolForma.merge(troncoMalla.geometry, troncoMalla.matrix);
 arbolForma.merge(esferaMalla.geometry, esferaMalla.matrix);
 //arbolForma.translateY(-30);
 //Torre2.scale( 1);
+*/
 /////////////////////////////tablero
 var tablero = new Array(); 
 for ( var XX = 0; XX < 8; XX ++ ){
@@ -84,6 +85,7 @@ for ( var ZZ = 0; ZZ < 8; ZZ ++ ){
 }}
 //tablero
 
+/*
 var arbolMalla = new THREE.Mesh(arbolForma, material1);
 var Torre2 = new THREE.Mesh(arbolForma, material2);
 var Torre3 = new THREE.Mesh(arbolForma, material1);
@@ -129,3 +131,4 @@ renderizador.setSize( window.innerHeight*.95,
 			window.innerHeight*.95 );
 document.body.appendChild( renderizador.domElement );
 renderizador.render( escena, camara );
+*/
