@@ -4,7 +4,7 @@ esferaForma.translate(0,20,0);
 
 var anilloMalla = new THREE.Mesh(anilloForma);
 var esferaMalla = new THREE.Mesh(esferaForma);
-anilloMalla.rotateX(Math.PI/4);
+anilloMalla.rotateX(Math.PI);
 
 
 var peonForma = new THREE.Geometry();
