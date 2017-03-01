@@ -4,10 +4,11 @@ esferaForma.translate(0,20,0);
 
 var anilloMalla = new THREE.Mesh(anilloForma);
 var esferaMalla = new THREE.Mesh(esferaForma);
+anilloMalla.rotateX(Math.PI/4);
+
 
 var peonForma = new THREE.Geometry();
 peonForma.merge(anilloMalla.geometry, anilloMalla.matrix);
-anilloMalla.rotateX(Math.PI/4);
 peonForma.merge(esferaMalla.geometry, esferaMalla.matrix);
 
 var material = new THREE.MeshBasicMaterial( { color: 0xffff00, side: THREE.DoubleSide } );
