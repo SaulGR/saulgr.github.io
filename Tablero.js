@@ -1,9 +1,9 @@
 
-/*var material1 = new THREE.MeshBasicMaterial( { color: 0xbbbbbb } );
+var material1 = new THREE.MeshBasicMaterial( { color: 0xbbbbbb } );
 var material2 = new THREE.MeshBasicMaterial( { color: 0x373737 } );
 var material3 = new THREE.MeshBasicMaterial( { color: 0x642424 } );
 
-////////////////
+/*////////////////
 var troncoForma = new THREE.CylinderGeometry(10, 20, 40);
 var basee = new THREE.CylinderGeometry(24,24,8);
 basee.translate(0,-20,0);
@@ -104,14 +104,14 @@ arbolMalla.translateY(25);
 Torre2.translateY(25);
 Torre3.translateY(25);
 Torre4.translateY(25);
-
+*/
 var escena = new THREE.Scene();
 // ,
 for ( var l=0; l<64; l ++)
 escena.add(  tablero [l] );
-
+/*
 escena.add(  arbolMalla , Torre2 , Torre3 , Torre4 );
-
+*/
 var mesita = new THREE.BoxGeometry( 300, 10, 300);
 var MMesa = new THREE.Mesh(mesita, material3);
 MMesa.translateX(125);
@@ -131,4 +131,4 @@ renderizador.setSize( window.innerHeight*.95,
 			window.innerHeight*.95 );
 document.body.appendChild( renderizador.domElement );
 renderizador.render( escena, camara );
-*/
+
