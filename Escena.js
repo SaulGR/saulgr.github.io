@@ -17,7 +17,7 @@ cubo.rotateY(Math.PI/4);
 var esfera1 = new THREE.Mesh( new THREE.SphereGeometry( 1 ),
                               new THREE.MeshNormalMaterial() );
 esfera1.position.x  = 5;
-esfera1.position.z  = 50;
+esfera1.position.z  = 49;
 
 
 var esfera2 = new THREE.Mesh( new THREE.SphereGeometry( 1 ),
