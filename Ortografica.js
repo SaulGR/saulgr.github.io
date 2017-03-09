@@ -10,16 +10,16 @@ camara.updateProjectionMatrix();
 
 camara.position.z = 50;
 
-var cubo  = new THREE.Mesh( new THREE.BoxGeometry( 30, 30, 30 ),
+var cubo  = new THREE.Mesh( new THREE.BoxGeometry( 60, 60, 60 ),
                             new THREE.MeshNormalMaterial() );
          
 cubo.rotateY(Math.PI/4);
 
-var esfera1 = new THREE.Mesh( new THREE.SphereGeometry( 15 ),
+var esfera1 = new THREE.Mesh( new THREE.SphereGeometry( 30 ),
                               new THREE.MeshNormalMaterial() );
 esfera1.position.x  = 50;
 
-var esfera2 = new THREE.Mesh( new THREE.SphereGeometry( 15 ),
+var esfera2 = new THREE.Mesh( new THREE.SphereGeometry( 30 ),
                               new THREE.MeshNormalMaterial() );
 esfera2.position.x  = -50;
 esfera2.position.z  = -100;
