@@ -24,7 +24,7 @@ function loop(){
         renderer.render(escena,camara);
      }
      
-     var malla, camara, renderer escena;
+     var malla, camara, renderer, escena;
      
      setup();
      loop();
