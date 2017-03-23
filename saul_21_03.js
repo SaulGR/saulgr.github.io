@@ -12,7 +12,7 @@ renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild(renderer.domElement );
 
-malla=newTHREE.Mesh(new THREE.SphereGeometry(1), new THREE.MeshNormalMaterial());
+malla=newTHREE.Mesh(new THREE.SphereGeometry(1), new THREE.MeshNormalMaterial);
 escena.add(malla);
 }
 
