@@ -1,8 +1,9 @@
 function listener(){
 camara.aspect=window.innerWidth/window.innerHeight
 camara.updateProjectionMatrix();
-renderer.setSize(window.innerWidth/window.innerHeight)
+renderer.setSize(window.innerWidth,window.innerHeight)
 }
+var capturarp=false
 
 function setup(){
 	escena=new THREE.Scene();
@@ -19,7 +20,7 @@ function setup(){
 
 	var tipoEvento='resize';
 	var capturar=false;
-	window.addEventListener(tipoEvento,listener,capturer);
+	window.addEventListener(tipoEvento,listener,capturarp);
 }
 
 function loop(){
