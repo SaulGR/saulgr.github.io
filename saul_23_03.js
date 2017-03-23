@@ -31,6 +31,9 @@ function loop(){
 }
 
 var malla,camara,renderer,escena;
+setup();
+loop();
+
 malla.rotation.x
 malla.rotation.y
 setup();
