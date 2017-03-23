@@ -29,7 +29,7 @@ if (e.keyCode === 65)
 else if (e.keyCode === 90)
 	camara.position.z--;
 }
-window.addEventListener(´keypress´,push,false);
+window.addEventListener('keypress',push,false);
 function loop(){
 	requestAnimationFrame(loop);
 	malla.rotation.x += 0.01;
