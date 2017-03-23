@@ -36,5 +36,4 @@ loop();
 
 malla.rotation.x
 malla.rotation.y
-setup();
-loop();
+
