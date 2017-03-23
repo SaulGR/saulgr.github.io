@@ -14,7 +14,7 @@ function setup(){
 	renderer.setSize(window.innerWidth, window.innerHeight);
 	document.body.appendChild(renderer.domElement);
 
-	malla = new THREE.Mesh(new THREE.SphereGeometry(1), new THREE.MeshNormalMaterial()); %%%%
+	malla = new THREE.Mesh(new THREE.SphereGeometry(1), new THREE.MeshNormalMaterial());
 	escena.add(malla);
 
 	var tipoEvento='resize';
@@ -37,6 +37,3 @@ malla.rotation.x
 malla.rotation.y
 setup();
 loop();
-
-
-%concurrencia cooperativa con Arduino
