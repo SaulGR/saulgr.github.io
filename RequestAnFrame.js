@@ -28,3 +28,8 @@ malla.rotation.y += 0.01;
 
 renderer.render(escena, camara);
 }
+
+var camara, escena, renderer, malla;
+
+setup();
+loop();
