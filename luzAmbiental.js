@@ -6,13 +6,14 @@ var malla  = new THREE.Mesh(forma, material);
 
 var escena = new THREE.Scene()
 escena.add(malla);
-escena.add(luzPuntual);
+escena.add(iluminacion);
 
 var camara = new THREE.PerspectiveCamera();
 camara.position.z = 5;
 
-var lienzo = document.getElementById("luzAmbiental");
-var renderizador = new THREE.WebGLRenderer({canvas: lienzo, antialias: true});
+renderer = new THREE.WebGLRenderer();
+renderer.setSize(window.innerHeight*.95, window.innerHeight*.95);
+document.body.appendChild(renderer.domElement);
 
 renderizador.setSize(600, 600);
 renderizador.render(escena, camera);
