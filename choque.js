@@ -28,7 +28,7 @@ function setup(){
   cubo1.rotation.y  +=  step;
   
   cubo2.rotation.x  +=  step;
-  cubo2.rotation.y  +-  step;
+  cubo2.rotation.y  +=  step;
   
   renderer.render(  escena, camara  );
   requestAnimationFrame(loop);
